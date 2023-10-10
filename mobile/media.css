@@ -1,0 +1,26 @@
+/*Nav mobile*/
+
+@media screen and (max-width: 500px){
+    
+    .header-content{
+        width: 100%;
+    }
+
+    .logo-content img{
+        margin-left: 15px;
+        width: 100px;
+    }
+
+    .items-desktop{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .items-mobile{
+        display: block;
+    }
+
+}
