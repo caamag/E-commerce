@@ -135,99 +135,71 @@ body{
     line-height: 80px;
 }
 
+/*----------------------Slider-------------------------*/
 
-/*Slider container*/
 
-.slider-container{
+.slider-content{
     position: relative;
     width: 100%;
-    height: 80vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    height: 90vh;
+    background-color: rgb(31, 31, 31);
 }
 
 .slider-txt{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    color: white;
-    font-size: 1.4rem;
+    padding-top: 50px;
+    font-size: 1.6rem;
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Teko', sans-serif;
+    color: white;
 }
 
 .slider-txt span{
     background-color: rgb(199, 48, 51);
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px 30px 10px 30px;
     border-radius: 100%;
-    margin-right: 10px;
 }
-
 
 .slider{
     position: absolute;
-    display: flex;
+    overflow: hidden;
     width: 60%;
-    height: 600px;
-    left: 0px;
+    height: 65%;
     top: 0px;
     bottom: 0px;
+    left: 0px;
     right: 0px;
     margin: auto;
-    z-index: 1;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.prev-btn{
-    position: absolute;
+.slider-content button{
+    position: absolute; 
     top: 0px;
     bottom: 0px;
-    left: 16%;
-    font-size: 6rem;
+    font-size: 5rem;
     background: none;
     border: none;
+    color: white;
     cursor: pointer;
     transition: 250ms;
-    color: white;
 }
 
-.nxt-btn{
-    position: absolute;
-    right: 16%;
-    top: 0px;
-    bottom: 0px;
-    font-size: 6rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: 250ms;
-    color: white;
-}
-
-.prev-btn:hover, .nxt-btn:hover{
+.slider-content button:hover{
     scale: 1.15;
 }
 
+.nxt-btn{
+    right: 16%;
+}
+
+.prev-btn{
+    left: 16%;
+}
+
 .slide{
-    flex: 0 0 100%;
-}
-
-.slider :nth-child(1) {
-    background-color: rgb(136, 136, 140);
-}
-
-.slider :nth-child(2) {
-    background-color: rgb(40, 129, 129);
-    display: none;
-}
-
-.slider :nth-child(3) {
-    background-color: brown;
-    display: none;
-}
-
-.slider :nth-child(4) {
-    background-color: blueviolet;
-    display: none;
+    width: 100%;
+    height: 100%;
 }
