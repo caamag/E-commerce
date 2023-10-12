@@ -168,6 +168,7 @@ body{
 
 .slider{
     position: absolute;
+    display: flex;
     width: 60%;
     height: 600px;
     left: 0px;
@@ -175,5 +176,58 @@ body{
     bottom: 0px;
     right: 0px;
     margin: auto;
-    background-color: white;
+    z-index: 1;
+}
+
+.prev-btn{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 16%;
+    font-size: 6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 250ms;
+    color: white;
+}
+
+.nxt-btn{
+    position: absolute;
+    right: 16%;
+    top: 0px;
+    bottom: 0px;
+    font-size: 6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 250ms;
+    color: white;
+}
+
+.prev-btn:hover, .nxt-btn:hover{
+    scale: 1.15;
+}
+
+.slide{
+    flex: 0 0 100%;
+}
+
+.slider :nth-child(1) {
+    background-color: rgb(136, 136, 140);
+}
+
+.slider :nth-child(2) {
+    background-color: rgb(40, 129, 129);
+    display: none;
+}
+
+.slider :nth-child(3) {
+    background-color: brown;
+    display: none;
+}
+
+.slider :nth-child(4) {
+    background-color: blueviolet;
+    display: none;
 }

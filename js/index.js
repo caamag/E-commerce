@@ -31,3 +31,5 @@ navXButton.addEventListener('click', () => {
 })
 
 
+//slider
+
