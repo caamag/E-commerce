@@ -137,6 +137,23 @@ body{
 
 /*----------------------Slider-------------------------*/
 
+.background{
+    position: absolute;
+    width: 20%;
+    height: 250px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.right{
+    right: 0%;
+    background: linear-gradient(to left,rgb(24, 24, 24), rgb(75, 75, 75), rgb(118, 118, 118)); 
+}
+
+.left{
+    left: 0%;
+    background: linear-gradient(to left,rgb(118, 118, 118), rgb(75, 75, 75), rgb(24, 24, 24)); 
+}
 
 .slider-content{
     position: relative;
