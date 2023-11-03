@@ -1,14 +1,22 @@
 /*Nav mobile*/
 
 @media screen and (max-width: 500px){
+
+    header{
+        height: 80px;
+    }
     
     .header-content{
         width: 100%;
     }
 
+    .logo-content{
+        width: 30%;
+    }
+
     .logo-content img{
-        margin-left: 15px;
-        width: 100px;
+        height: 60px;
+        width: auto;
     }
 
     .items-desktop{
@@ -23,4 +31,89 @@
         display: block;
     }
 
+    .menu-button, .menu-X-button{
+        right: 40px;
+        top: 20px;
+    }
+
+    /*banner*/
+
+    .banner-container{
+        height: 50vh;
+        background-image: url(/imgs/background-mobile.jpg);
+        background-size: 120%;
+    }
+
+    .banner-content h1{
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    /*slider*/
+
+    .slider-content{
+        display: none;
+    }
+
 }
+
+
+/*Ajustes background banner*/
+@media screen and (max-width: 1200px) and (min-width: 501px){
+    .banner-container{
+        background-size: 150%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 501px){
+    .banner-container{
+        background-size: 200%;
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width: 501px){
+    .banner-container{
+        background-size: 250%;
+    }
+
+    .banner-content h1{
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+}
+
+/*items*/
+
+@media screen and (max-width: 1200px) {
+    .items-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .item{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .items-container{
+        margin-top: 60px;
+    }
+
+    .items-content{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .item{
+        width: 90%;
+        margin: 0 auto;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+/*slider*/
