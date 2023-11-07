@@ -28,43 +28,10 @@ navXButton.addEventListener('click', () => {
 
     }, 400)
 
-})
+}); 
 
 
 //slider
+const slider = document.querySelector('.slider');
 
-const slides = document.querySelectorAll('.slide'); 
-const prevBtn = document.querySelector('.prev-btn'); 
-const nxtBtn = document.querySelector('.nxt-btn'); 
-
-let currentSlide = 0;
-
-function showSlide (slideIndex) {
-
-    slides.forEach((slide, index) => {
-
-        if (index === slideIndex) {
-            slide.style.display = 'block'; 
-        } else{
-            slide.style.display = 'none'; 
-        }
-
-    }); 
-
-}; 
-
-prevBtn.addEventListener('click', () => {
-
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length; 
-    showSlide(currentSlide); 
-
-}); 
-
-nxtBtn.addEventListener('click', () => {
-
-    currentSlide = (currentSlide + 1) % slides.length; 
-    showSlide(currentSlide); 
-
-}); 
-
-showSlide(currentSlide); 
+function showSlides () {}; 
