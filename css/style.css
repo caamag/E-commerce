@@ -337,6 +337,8 @@ body{
     padding-top: 20px;
 }
 
+/*footer*/
+
 footer{
     position: relative;
     width: 100%;
@@ -346,7 +348,7 @@ footer{
 
 footer img{
     position: absolute;
-    width: 60px;
+    width: 40px;
     height: auto;
     bottom: 50px;
     right: 50px;
@@ -358,4 +360,17 @@ footer img{
 
 footer img:hover{
     border-radius: 15px;
+}
+
+.logo-footer{
+    position: absolute;
+    width: 50px;
+    left: 10px;
+    border: none; 
+    top: 10px;
+    transition: 250ms;
+}
+
+.logo-footer:hover{
+    scale: 1.1;
 }
