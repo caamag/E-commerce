@@ -28,43 +28,15 @@ navXButton.addEventListener('click', () => {
 
     }, 400)
 
-})
+}); 
 
 
 //slider
+const slider = document.querySelector('.slider');
+const addItem = document.querySelector('.btn-add'); 
 
-const slides = document.querySelectorAll('.slide'); 
-const prevBtn = document.querySelector('.prev-btn'); 
-const nxtBtn = document.querySelector('.nxt-btn'); 
+addItem.addEventListener('click', () => {
 
-let currentSlide = 0;
-
-function showSlide (slideIndex) {
-
-    slides.forEach((slide, index) => {
-
-        if (index === slideIndex) {
-            slide.style.display = 'block'; 
-        } else{
-            slide.style.display = 'none'; 
-        }
-
-    }); 
-
-}; 
-
-prevBtn.addEventListener('click', () => {
-
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length; 
-    showSlide(currentSlide); 
+    console.log('Clicado');
 
 }); 
-
-nxtBtn.addEventListener('click', () => {
-
-    currentSlide = (currentSlide + 1) % slides.length; 
-    showSlide(currentSlide); 
-
-}); 
-
-showSlide(currentSlide); 

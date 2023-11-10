@@ -83,9 +83,7 @@
     .items-container{
         width: 90%;
     }
-}
 
-@media screen and (max-width: 1200px){
     .item{
         height: 250px;
     }
@@ -158,6 +156,10 @@
 
     .price-content{
         font-size: 3.5rem;
+    }
+
+    .slider{
+        width: 70%;
     }
 
 }
