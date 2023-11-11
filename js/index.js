@@ -32,11 +32,3 @@ navXButton.addEventListener('click', () => {
 
 
 //slider
-const slider = document.querySelector('.slider');
-const addItem = document.querySelector('.btn-add'); 
-
-addItem.addEventListener('click', () => {
-
-    console.log('Clicado');
-
-}); 
