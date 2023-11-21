@@ -209,3 +209,45 @@
         display: none;
     }
 }
+
+/*footer*/
+@media screen and (max-width: 1200px){
+    .footer-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .footer-content{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .footer-content div{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 50vh;
+    }
+
+    footer img{
+        width: 20px;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    footer{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    footer{
+        height: 80vh;
+    }
+}

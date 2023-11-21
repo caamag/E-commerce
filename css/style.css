@@ -193,33 +193,12 @@ body{
     background-color: white;
     border: 3px solid rgb(220, 220, 220);
     border-radius: 10px;
-}
-
-.nxt-btn, .prev-btn{
-    position: absolute; 
-    top: 0px;
-    bottom: 0px;
-    font-size: 5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: 250ms;
-}
-
-.nxt-btn:hover, .prev-btn:hover{
-    scale: 1.15;
-}
-
-.nxt-btn{
-    right: 16%;
-}
-
-.prev-btn{
-    left: 16%;
+    transition: 500ms;
 }
 
 .slide{
+    position: absolute;
+    left: 0;
     display: flex;
     align-items: center;
     width: 100%;
@@ -229,6 +208,7 @@ body{
     text-align: center;
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Teko', sans-serif;
+    transition: 500ms;
 }
 
 .slide-title{
@@ -342,7 +322,7 @@ body{
 footer{
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-color: rgb(31, 31, 31);
 }
 
@@ -373,4 +353,39 @@ footer img:hover{
 
 .logo-footer:hover{
     scale: 1.1;
+}
+
+.footer-content{
+    width: 65%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.footer-content div{
+    width: 50%;
+    height: 100%;
+}
+
+.footer-content h1{
+    font-size: 1rem;
+    color: white;
+}
+
+.footer-logo{
+    text-align: center;
+}
+
+.footer-logo h1{
+    font-family: 'Games', sans-serif;
+    padding-top: 20px;
+    font-size: 4rem;
+}
+
+
+.open{
+    color: rgb(18, 181, 97);
+}
+
+.closed{
+    color: rgb(255, 60, 60);
 }
