@@ -251,3 +251,9 @@
         height: 80vh;
     }
 }
+
+@media screen and (max-width: 1350px) {
+    footer{
+        height: 60vh;
+    }
+}
