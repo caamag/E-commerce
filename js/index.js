@@ -30,30 +30,6 @@ navXButton.addEventListener('click', () => {
 
 }); 
 
-//animation scroll
-
-const items1 = document.querySelectorAll('.item1'); 
-const items2 = document.querySelectorAll('.item2'); 
-const items3 = document.querySelectorAll('.item3'); 
-const items4 = document.querySelectorAll('.item4');
-
-document.addEventListener('scroll', () => {
-
-    const top = window.scrollY; 
-
-    if (top >= 500) {
-        
-
-    }
-
-}); 
-
-
-
-
-
-
-
 //opening time
 const opening = document.querySelector('.opening'); 
 const data = new Date(); 
